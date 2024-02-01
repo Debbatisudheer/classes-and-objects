@@ -12,7 +12,7 @@ function drop(ev) {
     // Set common attributes for the new vehicle
     newVehicle.querySelector(".brand").innerText = prompt("Enter Sample Brand Name:") || 'Default Brand';
     newVehicle.querySelector(".model").innerText = prompt("Enter Sample Model Name:") || 'Default Model';
-    newVehicle.querySelector(".year").innerText = prompt("Enter Sample Year Name:") || 'Default Year';
+    newVehicle.querySelector(".year").innerText = prompt("Enter Sample Year:") || 'Default Year';
 
     // Set additional attributes for subclasses
     if (vehicleType !== 'Vehicle') {
