@@ -14,13 +14,15 @@ body {
 }
 
 .blueprint {
-    width: 80%; /* Adjust the width for mobile view */
-    margin-bottom: 10px; /* Add some space between blueprints */
-    padding: 10px;
+    width: 15%; /* Adjust the width for mobile view */
+    height: 105px;
+    margin-bottom: 5px; /* Add some space between blueprints */
+    padding: 5px;
     border: 2px solid #3498db;
     border-radius: 8px;
     cursor: move;
     background-color: #ecf0f1;
+    font-size: 11px;
 }
 
 .vehicle-container {
