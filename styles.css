@@ -47,6 +47,9 @@ body {
 
     .blueprint {
         width: 100%;
+        height: 80px; /* Adjusted height for mobile view */
+        font-size: 10px; /* Adjusted font size for mobile view */
+        font-weight: bold; /* Adjusted font weight for mobile view */
     }
 
     .vehicle-container {
