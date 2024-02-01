@@ -40,3 +40,16 @@ body {
     border-radius: 5px;
     background-color: #d4efdf;
 }
+@media (max-width: 600px) {
+    .blueprint-container {
+        flex-direction: column;
+    }
+
+    .blueprint {
+        width: 100%;
+    }
+
+    .vehicle-container {
+        width: 100%;
+    }
+}
