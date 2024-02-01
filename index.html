@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drag and Drop Vehicles</title>
+</head>
+<body>
+
+    <div id="vehicleBlueprint" class="blueprint" draggable="true" ondragstart="drag(event, 'Vehicle')">
+        <h3>Vehicle Blueprint its a Parent class</h3>
+        <p>This is parent class it contains common attributes(Brand, Model, Year)</p>
+        <p>shared by every subclass(car, bike, cycle, tractor)</p>
+    </div>
+
+    <div id="carBlueprint" class="blueprint" draggable="true" ondragstart="drag(event, 'Car')">
+        <h3>Car Blueprint its a sub class</h3>
+        <p>This is Inherits from Vehicle Class.</p>
+        <p>It contains parent class attributes(Brand, Model, Year)</p>
+        <p>Also has its own attributes(fuel_type, num_doors)</p>
+    </div>
+
+    <div id="bikeBlueprint" class="blueprint" draggable="true" ondragstart="drag(event, 'Bike')">
+        <h3>Bike Blueprint its a sub class</h3>
+        <p>This is Inherits from Vehicle Class.</p>
+        <p>It contains parent class attributes(Brand, Model, Year)</p>
+        <p>Also has its own attributes(bike_type, color)</p>
+    </div>
+
+    <div id="cycleBlueprint" class="blueprint" draggable="true" ondragstart="drag(event, 'Cycle')">
+        <h3>Cycle Blueprint its a sub class</h3>
+        <p>This is Inherits from Vehicle Class.</p>
+        <p>It contains parent class attributes(Brand, Model, Year)</p>
+        <p>Also has its own attributes(num_wheels, has_basket)</p>
+    </div>
+
+    <div id="tractorBlueprint" class="blueprint" draggable="true" ondragstart="drag(event, 'Tractor')">
+        <h3>Tractor Blueprint its a sub class</h3>
+        <p>This is Inherits from Vehicle class.</p>
+        <p>It contains parent class attributes(Brand, Model, Year)</p>
+        <p>Also has its own attributes(hitch_type, num_plows)</p>
+    </div>
+
+    <div id="vehicleContainer" class="vehicle-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Vehicle Container</h2>
+        <p>Drag the vehicle blueprint here to create a new vehicle.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
